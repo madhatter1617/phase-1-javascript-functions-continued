@@ -7,15 +7,15 @@ function mondayWork(ew ="go to the office"){
     return `This Monday, I will ${ew}.`
 }
 
-function wrapAdjective(wow = "special!"){
-//const idkAnymore = wrapAdjective()
-    const reTry = `You are `
-    return function(){
-        let wrap = "*"
-        return function (){
-            return reTry, wrap, wow, wrap 
-        }
+function wrapAdjective(wrap = "*", wow = "special"){
+    let result = wrapAdjective()
+    let emphatic = result("a hard worker")
+    return function()
+    {
+        const you= "You are ";
+        return function () {
+            return (you, wrapAdjective(wrap), emphatic, wrapAdjective(wow))
     }
 
-}
+}}
 
