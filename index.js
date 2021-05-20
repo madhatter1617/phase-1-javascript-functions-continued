@@ -7,15 +7,16 @@ function saturdayFun(sleep = "roller-skate") {
    return `This Monday, I will ${ew}.`
  }
  
-//  function wrapAdjective(wow = "*"){
-//    const part1 = `You are `
-//    return function(){
-//       const part2 = "!"
-//       return function(){
-//       return (part1)
-//       }
-//    }
+ function wrapAdjective(wow = '*'){
+       
+    return function (result = 'a hard worker')
+    { 
+      return `You are ${wow}${result}${wow}!` 
+  }
+}
+
+   
    
   
- }
+ 
 
